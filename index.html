@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    </link>
+    <link rel="stylesheet" href="css/all.css">
+
+    <title>高雄旅遊資訊網</title>
+    <link rel="shortcut icon" href="images/icon.png">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="card border-0 w-100">
+                <img src="images/hero.png" class="card-img rounded-0" alt="">
+                <div class="card-img-overlay">
+                    <div class="d-flex justify-content-center align-items-end">
+                        <img src="images/icon.png" height="60" class="mr-2" alt="">
+                        <h1 class="text-center text-white mt-5">高雄旅遊資訊網</h1>
+                    </div>
+                    <div class="row justify-content-center mt-5">
+                        <div class="col-6">
+                            <select class="custom-select font-weight-bold" id="selectZoneContainer">
+                                <option value="選擇行政區域">--請選擇行政區域--</option>
+                                <option value="三民區">三民區</option>
+                                <option value="內門區">內門區</option>
+                                <option value="美濃區">美濃區</option>
+                                <option value="大樹區">大樹區</option>
+                                <option value="小港區">小港區</option>
+                                <option value="六龜區">六龜區</option>
+                                <option value="仁武區">仁武區</option>
+                                <option value="左營區">左營區</option>
+                                <option value="田寮區">田寮區</option>
+                                <option value="永安區">永安區</option>
+                                <option value="甲仙區">甲仙區</option>
+                                <option value="鼓山區">鼓山區</option>
+                                <option value="杉林區">杉林區</option>
+                                <option value="那瑪夏">那瑪夏</option>
+                                <option value="岡山區">岡山區</option>
+                                <option value="高雄市">高雄市</option>
+                                <option value="前鎮區">前鎮區</option>
+                                <option value="新興區">新興區</option>
+                                <option value="苓雅區">苓雅區</option>
+                                <option value="茂林區">茂林區</option>
+                                <option value="茄萣區">茄萣區</option>
+                                <option value="梓官區">梓官區</option>
+                                <option value="旗津區">旗津區</option>
+                                <option value="桃源區">桃源區</option>
+                                <option value="楠梓區">楠梓區</option>
+                                <option value="前金區">前金區</option>
+                                <option value="鳳山區">鳳山區</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-8 bg-white rounded shadow py-3 px-5 my-5">
+                <h5 class="text-center text-nowrap font-weight-bold mb-3">熱門觀光區</h5>
+                <div class="row">
+                    <div class="col-md-3 text-center text-nowrap px-2">
+                        <button type="button" class="btn btn-primary btn-block px-5 hot1" value="苓雅區">苓雅區</button>
+                    </div>
+                    <div class="col-md-3 text-center text-nowrap px-2">
+                        <button type="button" class="btn btn-warning btn-block text-white px-5 hot2" value="三民區">三民區</button>
+                    </div>
+                    <div class="col-md-3 text-center text-nowrap px-2">
+                        <button type="button" class="btn btn-danger btn-block px-5 hot3" value="新興區">新興區</button>
+                    </div>
+                    <div class="col-md-3 text-center text-nowrap px-2">
+                        <button type="button" class="btn btn-info btn-block px-5 hot4" value="鼓山區">鼓山區</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" id="dataContainer">
+
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card border-0">
+                        <img src="http://khh.travel/FileArtPic.ashx?id=1905&w=1280&h=960" class="card-img-top img-fluid"
+                            style="max-height: 220px;" alt="">
+                        <div class="card-img-overlay d-flex align-items-end justify-content-between text-white">
+                            <h4 class="card-text mb-0">中都愛河濕地公園</h4>
+                            <p class="card-text">三民區</p>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-text mb-2">
+                            <img src="images/icons_clock.png" class="mr-2" alt="">
+                            全天候開放
+                        </div>
+                        <div class="card-text mb-2">
+                            <img src="images/icons_pin.png" class="mr-2" alt="">
+                            高雄市三民區同盟三路與十全三路交叉處
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <p class="card-text mb-2">
+                                <img src="images/icons_phone.png" class=" mr-2" style="padding-left: 2px;" alt="">
+                                886-7-7995678
+                            </p>
+                            <div class="card-text mb-2">
+                                <img src="images/icons_tag.png" class="mr-2" alt="">
+                                免費參觀
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card border-0">
+                        <img src="http://khh.travel/FileArtPic.ashx?id=1239&w=1280&h=960" class="card-img-top img-fluid"
+                            style="max-height: 220px;" alt="">
+                        <div class="card-img-overlay d-flex align-items-end justify-content-between text-white">
+                            <h4 class="card-text mb-0">高雄港</h4>
+                            <p class="card-text">鼓山區</p>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-text mb-2">
+                            <img src="images/icons_clock.png" class="mr-2" alt="">
+                            全天候開放
+                        </div>
+                        <div class="card-text mb-2">
+                            <img src="images/icons_pin.png" class="mr-2" alt="">
+                            高雄市鼓山區臨海二路62號
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <p class="card-text mb-2">
+                                <img src="images/icons_phone.png" class=" mr-2" style="padding-left: 2px;" alt="">
+                                886-7-5612311
+                            </p>
+                            <div class="card-text mb-2">
+                                <img src="images/icons_tag.png" class="mr-2" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card border-0">
+                        <img src="http://khh.travel/FileArtPic.ashx?id=1876&w=1280&h=960" class="card-img-top img-fluid"
+                            style="max-height: 220px;" alt="">
+                        <div class="card-img-overlay d-flex align-items-end justify-content-between text-white">
+                            <h4 class="card-text mb-0">小林村紀念公園</h4>
+                            <p class="card-text">甲仙區</p>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-text mb-2">
+                            <img src="images/icons_clock.png" class="mr-2" alt="">
+                            全天候開放
+                        </div>
+                        <div class="card-text mb-2">
+                            <img src="images/icons_pin.png" class="mr-2" alt="">
+                            高雄市甲仙區小林里五里埔
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <p class="card-text mb-2">
+                                <img src="images/icons_phone.png" class=" mr-2" style="padding-left: 2px;" alt="">
+                                886-7-7995678
+                            </p>
+                            <div class="card-text mb-2">
+                                <img src="images/icons_tag.png" class="mr-2" alt="">
+                                免費參觀
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card border-0">
+                        <img src="http://khh.travel/FileArtPic.ashx?id=209&w=1280&h=960" class="card-img-top img-fluid"
+                            style="max-height: 220px;" alt="">
+                        <div class="card-img-overlay d-flex align-items-end justify-content-between text-white">
+                            <h4 class="card-text mb-0">前鎮之星</h4>
+                            <p class="card-text">前鎮區</p>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-text mb-2">
+                            <img src="images/icons_clock.png" class="mr-2" alt="">
+                            全天候開放
+                        </div>
+                        <div class="card-text mb-2">
+                            <img src="images/icons_pin.png" class="mr-2" alt="">
+                            高雄市前鎮區中山三路與凱旋四路交叉口
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <p class="card-text mb-2">
+                                <img src="images/icons_phone.png" class=" mr-2" style="padding-left: 2px;" alt="">
+                                886-7-7995678
+                            </p>
+                            <div class="card-text mb-2">
+                                <img src="images/icons_tag.png" class="mr-2" alt="">
+                                免費參觀
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card border-0">
+                        <img src="http://khh.travel/FileArtPic.ashx?id=215&w=1280&h=960" class="card-img-top img-fluid"
+                            style="max-height: 220px;" alt="">
+                        <div class="card-img-overlay d-flex align-items-end justify-content-between text-white">
+                            <h4 class="card-text mb-0">哨船頭遊艇碼頭</h4>
+                            <p class="card-text">鼓山區</p>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-text mb-2">
+                            <img src="images/icons_clock.png" class="mr-2" alt="">
+                            全天候開放，搭乘渡輪時間 05:00-凌晨02:00
+                        </div>
+                        <div class="card-text mb-2">
+                            <img src="images/icons_pin.png" class="mr-2" alt="">
+                            高雄市鼓山區哨船街32號
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <p class="card-text mb-2">
+                                <img src="images/icons_phone.png" class=" mr-2" style="padding-left: 2px;" alt="">
+                                886-7-6979220
+                            </p>
+                            <div class="card-text mb-2">
+                                <img src="images/icons_tag.png" class="mr-2" alt="">
+                                免費參觀
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card border-0">
+                        <img src="http://khh.travel/FileArtPic.ashx?id=2101&w=1280&h=960" class="card-img-top img-fluid"
+                            style="max-height: 220px;" alt="">
+                        <div class="card-img-overlay d-flex align-items-end justify-content-between text-white">
+                            <h4 class="card-text mb-0">旗后燈塔</h4>
+                            <p class="card-text">旗津區</p>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-text mb-2">
+                            <img src="images/icons_clock.png" class="mr-2" alt="">
+                            10月至次年3月 週二至週日09:00-17:00，4月至9月 週二至週日09:00-16:00，每週一休館
+                        </div>
+                        <div class="card-text mb-2">
+                            <img src="images/icons_pin.png" class="mr-2" alt="">
+                            高雄市旗津區旗下巷34號
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <p class="card-text mb-2">
+                                <img src="images/icons_phone.png" class=" mr-2" style="padding-left: 2px;" alt="">
+                                886-7-2225136
+                            </p>
+                            <div class="card-text mb-2">
+                                <img src="images/icons_tag.png" class="mr-2" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    </div>
+    <footer class="text-center bg-info py-3">
+        <h6 class="text-white">高雄旅遊網</h6>
+        <small class="text-warning">資料來源：高雄市政府</small>
+    </footer>
+
+    <!-- JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <!-- <script src="js/data.js"></script> -->
+    <script src="js/all.js"></script>
+</body>
+
+</html>
