@@ -5,6 +5,6 @@
 #### 首頁：選擇地區後更換內容資訊、卡片式排版與 Grid System 排版
 ![readme01](https://github.com/IanSu0630/Travel_Web/blob/master/readme_img/readme01.PNG)
 ---
-![readme02](https://github.com/IanSu0630/Travel_Web/blob/master/readme_img/readme02.PNG)
+![readme02](https://github.com/IanSu0630/Travel_Web/blob/master/readme_img/readme02.png)
 ---
 ![readme03](https://github.com/IanSu0630/Travel_Web/blob/master/readme_img/readme03.PNG)
