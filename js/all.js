@@ -32,7 +32,27 @@ function updateList(e) {
             cardTel = `<p class="card-text tel mb-2"><img src="images/icons_phone.png" class=" mr-2" style="padding-left: 2px;" alt="">${data[i].Tel}</p>`;
             cardTicketinfo = `<div class="card-text mb-2"><img src="images/icons_tag.png" class="mr-2" alt="">${data[i].Ticketinfo}</div>`;
 
-            card += `<div class="col-md-6 mb-4"><div class="card"><div class="card border-0">${cardimg}<div class="card-img-overlay d-flex align-items-end justify-content-between text-white">${cardName}${cardZone}</div></div><div class="card-body">${cardOpentime}${cardAddress}<div class="d-flex justify-content-between">${cardTel}${cardTicketinfo}</div></div></div></div></div>`;
+            card += `
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card border-0">
+                        ${cardimg}
+                        <div class="card-img-overlay d-flex align-items-end justify-content-between text-white">
+                            ${cardName}
+                            ${cardZone}
+                        </div>
+                    </div>
+                    <div class="card-body">
+                            ${cardOpentime}
+                            ${cardAddress}
+                            <div class="d-flex justify-content-between">
+                                ${cardTel}
+                                ${cardTicketinfo}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>`;
             
             dataContainer.innerHTML = card;
             str = data[i].Zone;
@@ -50,3 +70,4 @@ hot1.addEventListener('click', updateList, false);
 hot2.addEventListener('click', updateList, false);
 hot3.addEventListener('click', updateList, false);
 hot4.addEventListener('click', updateList, false);
+
