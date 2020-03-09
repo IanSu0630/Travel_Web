@@ -12,27 +12,27 @@ var dataContainer = document.getElementById('dataContainer');
 var len = data.length;
 
 function updateList(e) {
-    var select = e.target.value;
-    var card = '';
-    var cardimg = '';
-    var cardName = '';
-    var cardZone = '';
-    var cardOpentime = '';
-    var cardAddress = '';
-    var cardTel = '';
-    var cardTicketinfo ='';
+    let select = e.target.value;
+    let card = '';
+    let cardimg = '';
+    let cardName = '';
+    let cardZone = '';
+    let cardOpentime = '';
+    let cardAddress = '';
+    let cardTel = '';
+    let cardTicketinfo ='';
 
-    for(var i=0;i<len;i++){
+    for(let i=0;i<len;i++){
         if (select == data[i].Zone){
-            cardimg = '<img src=' + data[i].Picture1 + ' class="card-img-top img-fluid" style="max-height: 220px;" alt=""></img>';
-            cardName = '<h4 class="card-text mb-0">' + data[i].Name + '</h4>';
-            cardZone = '<p class="card-text">' +data[i].Zone+ '</p>';
-            cardOpentime = '<div class="card-text mb-2"><img src="images/icons_clock.png" class="mr-2" alt="">' + data[i].Opentime + '</div>';
-            cardAddress = '<div class="card-text mb-2"><img src="images/icons_pin.png" class="mr-2" alt="">' + data[i].Add + '</div>';
-            cardTel = '<p class="card-text tel mb-2"><img src="images/icons_phone.png" class=" mr-2" style="padding-left: 2px;" alt="">' + data[i].Tel + '</p>';
-            cardTicketinfo = '<div class="card-text mb-2"><img src="images/icons_tag.png" class="mr-2" alt="">' + data[i].Ticketinfo + '</div>';
+            cardimg = `<img src=${data[i].Picture1} class="card-img-top img-fluid" style="max-height: 220px;" alt=""></img>`
+            cardName = `<h4 class="card-text mb-0">${data[i].Name}</h4>`;
+            cardZone = `<p class="card-text">${data[i].Zone}</p>`;
+            cardOpentime = `<div class="card-text mb-2"><img src="images/icons_clock.png" class="mr-2" alt="">${data[i].Opentime}</div>`;
+            cardAddress = `<div class="card-text mb-2"><img src="images/icons_pin.png" class="mr-2" alt="">${data[i].Add}</div>`;
+            cardTel = `<p class="card-text tel mb-2"><img src="images/icons_phone.png" class=" mr-2" style="padding-left: 2px;" alt="">${data[i].Tel}</p>`;
+            cardTicketinfo = `<div class="card-text mb-2"><img src="images/icons_tag.png" class="mr-2" alt="">${data[i].Ticketinfo}</div>`;
 
-            card += '<div class="col-md-6 mb-4"><div class="card"><div class="card border-0">' + cardimg + '<div class="card-img-overlay d-flex align-items-end justify-content-between text-white">' + cardName + cardZone + '</div></div><div class="card-body">' + cardOpentime + cardAddress + '<div class="d-flex justify-content-between">' + cardTel + cardTicketinfo + '</div></div></div></div></div>';
+            card += `<div class="col-md-6 mb-4"><div class="card"><div class="card border-0">${cardimg}<div class="card-img-overlay d-flex align-items-end justify-content-between text-white">${cardName}${cardZone}</div></div><div class="card-body">${cardOpentime}${cardAddress}<div class="d-flex justify-content-between">${cardTel}${cardTicketinfo}</div></div></div></div></div>`;
             
             dataContainer.innerHTML = card;
             str = data[i].Zone;
